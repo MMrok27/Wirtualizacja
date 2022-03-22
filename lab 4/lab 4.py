@@ -104,7 +104,7 @@ class Robaczek:
         print('x: ' + str(self.x) + ', y: ' + str(self.y))
 
 
-mujrobaczek = Robaczek(6, 9, 1)
+mujrobaczek = Robaczek(6, 6, 1)
 mujrobaczek.gdzie_jestes()
 mujrobaczek.idz_n(6)
 mujrobaczek.gdzie_jestes()
