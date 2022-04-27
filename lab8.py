@@ -9,7 +9,7 @@ print(df[df['Liczba']>1000])
 print(df[df['Imie']=='MICHAŁ'])
 print(df.agg({'Liczba':['sum']}))
 
-print(df[((df.Rok > 1999) & (df.Rok < 2005))].agg({'Liczba':['sum']}))
+print(df[((df.Rok > 1999) & (df.Rok < 2006))].agg({'Liczba':['sum']}))
 print(df.groupby(['Plec']).agg({'Liczba':['sum']}))
 
 
