@@ -12,7 +12,8 @@ print(df.agg({'Liczba':['sum']}))
 print(df[((df.Rok > 1999) & (df.Rok < 2006))].agg({'Liczba':['sum']}))
 print(df.groupby(['Plec']).agg({'Liczba':['sum']}))
 
-
+nic = (df.sort_values('Liczba', ascending = False).groupby(['Rok','Plec']).first())
+print(nic)
 
 nid = df[df['Plec'] == 'K'].groupby('Imie')[["Liczba"]].sum().sort_values('Liczba', ascending = False)[:1]
 nic = df[df['Plec'] == 'M'].groupby('Imie')[["Liczba"]].sum().sort_values('Liczba', ascending = False)[:1]
