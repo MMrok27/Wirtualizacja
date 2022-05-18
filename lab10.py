@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from PIL import Image
 #1
 # t = np.arange(1, 21, 1)
 # print(t)
@@ -52,6 +51,6 @@ df4 = pd.read_csv('zamowienia.csv',header=0,sep=';',decimal='.')
 zad4 = df4.groupby(['Sprzedawca']).agg({'Utarg':['sum']})
 print(zad4)
 myexplode = 9*[0.1]
-zad4.plot.pie(subplots=True,autopct='%.2f %%',fontsize=12,figsize=(10,10),legend=(0,0),shadow='True',explode = myexplode)
+zad4.plot.pie(subplots=True,autopct='%.2f %%',fontsize=12,figsize=(10,10),shadow='True',explode = myexplode)
 
 plt.show()
